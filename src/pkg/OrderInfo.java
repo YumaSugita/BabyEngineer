@@ -6,13 +6,17 @@ public class OrderInfo {
 	Scanner scan = new Scanner(System.in);
 	Stocks stocks = new Stocks();
 	
-	public static void getTaste() {
+	String[] indexOfBaseOrder = new String[5];
+	
+	
+	public void getTaste() {
 		System.out.println("スープを選んでください。 1.醤油 2.塩 3.味噌 4.豚骨 5.魚介系");
-//		String str = scan.nextLine();
-		
+		String taste = scan.nextLine();
+		indexOfBaseOrder[0] = taste;
 	}
-	public static void getDensity() {
-		
+	
+	public void getDensity() {
+		System.out.println();
 	}
 	public static void getTypeNoodle() {
 		
